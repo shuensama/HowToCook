@@ -139,7 +139,7 @@ const validators = [
 
   
   async (filePath, lines, errors) => {
-    const footer = '如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出 Issue 或 Pull request 。';
+    const footer = '如果您遵循本菜谱的制作流程而发现有问题或可以改进的流程，邀请您复刻此菜谱，定制属于您的专属味道~';
     if (!lines.includes(footer)) {
       errors.push(`文件 ${filePath} 不符合仓库的规范！ 它没有包含必需的附加内容！，需要在最后一行添加模板中的【${footer}】`);
     }
